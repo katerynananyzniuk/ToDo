@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <title>ToDo List</title>
+</head>
+<body>
+    <div class="toDo-List-container container">
+        <div class="toDo-header">
+            <input class="toDo-title header-title" type="text" value="Список дел" disabled="disabled">
+            <a href="#" class="btn btn-default" data-btn="sort" style="padding: 5px; font-size: 12px;">
+                <img src="svg/arrow-down-up.svg" class="toDo-sort" data-btn="sort" alt="down-up">
+            </a>
+        </div>
+        <hr id="hr" class="hr">
+        <div class="toDo-body">
+            <div class="toDo-list list-group" id="toDo-list">
+            </div>
+        </div>
+        <hr class = "hr">
+        <div class="toDo-footer">
+            <a href="#" class="btn btn-default" data-btn="list-add" style="padding: 5px; font-size: 12px;">
+                <img src="svg/plus-circle.svg" alt="plus">
+            </a>
+            <a href="#" class="btn btn-default" data-btn="list-del" style="padding: 5px; font-size: 12px;">
+                <img src="svg/dash-circle.svg" alt="minus">
+            </a>
+            <a href="#" class="btn btn-default" data-btn="list-clear" style="padding: 5px; font-size: 12px;">
+                <img src="svg/x-circle.svg" alt="clear">
+            </a>
+        </div>
+    </div>    
+
+    <script src="base.js"></script>
+    <script src="plugins/modal.js"></script>
+    <script src="plugins/confirm.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
