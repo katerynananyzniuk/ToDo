@@ -12,7 +12,7 @@ const toHTML = toDo => `
     <label class="toDo-elem list-group-item" id="elem-${toDo.id || 'newId'}" data-id="${toDo.id}">
         <div class="toDo-elem-item">
             <input class="toDo-elem-check-input form-check-input me-1" type="checkbox" ${toDo.status === 'done'?'checked':''}>
-            <input class="toDo-elem-text" type="text" value="${toDo.value || task}" disabled="disabled">
+            <input class="toDo-elem-text" type="text" value="${toDo.value || ""}" disabled="disabled">
         </div>
         <a href="#" class="btn btn-default" style="padding: 5px; font-size: 12px;">
             <img src="svg/bucket-fill.svg" class="toDo-elem-bucket" data-btn="elem-del" data-id="${toDo.id}" alt="del">   
