@@ -8,11 +8,11 @@ $.confirm = function(options) {
                 modal.destroy()
             },
             footerButtons: [
-                {text: 'Да', type: 'default', handler() {
+                {text: 'Delete', type: 'default', handler() {
                     modal.close()
                     resolve()
                 }},
-                {text: 'Отмена', type: 'default', handler() {
+                {text: 'Cancel', type: 'default', handler() {
                     modal.close()
                     reject()
                 }},

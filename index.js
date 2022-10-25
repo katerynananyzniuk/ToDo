@@ -1,5 +1,5 @@
-let toDoTitle = 'Список дел'
-let task = 'Дело'
+let toDoTitle = 'To Do List'
+let task = 'to do'
 let toDoElemInputs;
 
 let toDos = [
@@ -85,7 +85,7 @@ document.addEventListener('click', event => {
     if (event.target.dataset.btn === 'elem-del') {
         event.preventDefault()
         $.confirm({
-            title: 'Хотите удалить дело?',
+            title: 'Do you want to delete?',
         }).then(() => {
             toDos = toDos.filter(e => e.id !== id)
             render()
